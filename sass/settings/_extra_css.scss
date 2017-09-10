@@ -402,3 +402,295 @@ Use scenarios: http://ahrengot.github.io/sass-dropshadows/
 .shadow:not(.lifted):not(.raised):not(.perspective):not(.perspective-right):not(.curved):not(.curved-top):not(.curved-bottom):not(.curved-vertical):not(.curved-vertical-left):not(.curved-vertical-right):before, .shadow:not(.lifted):not(.raised):not(.perspective):not(.perspective-right):not(.curved):not(.curved-top):not(.curved-bottom):not(.curved-vertical):not(.curved-vertical-left):not(.curved-vertical-right):after { bottom: 12px; width: 50%; height: 55%; max-width: 300px; max-height: 100px; -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7); }
 .shadow:not(.lifted):not(.raised):not(.perspective):not(.perspective-right):not(.curved):not(.curved-top):not(.curved-bottom):not(.curved-vertical):not(.curved-vertical-left):not(.curved-vertical-right):before { left: 10px; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -ms-transform: rotate(-3deg); -o-transform: rotate(-3deg); transform: rotate(-3deg); }
 .shadow:not(.lifted):not(.raised):not(.perspective):not(.perspective-right):not(.curved):not(.curved-top):not(.curved-bottom):not(.curved-vertical):not(.curved-vertical-left):not(.curved-vertical-right):after { right: 10px; -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); }
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+img 
+{ max-width: 100%; 
+height: auto;
+ }
+.sticky {
+	display: block;
+}
+
+.text-inverse {
+    color: #eee;
+}
+.text-inverse a {
+    color: #cee;
+}
+
+.hentry {
+    padding:0;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+
+
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+
+/* =Index pagination
+----------------------------------------------- */
+
+/* The containing box with a nice white background */
+.paging-navigation {
+	font-family: sans-serif;
+	padding: 1em;
+	background: #fff;
+	background: hsl(0, 0%, 100%);
+}
+
+/* Remove bullets and list indentation */
+.paging-navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Make the list items appear horizontally */
+.paging-navigation li {
+	display: inline;
+}
+
+/* Give each link and the current item some padding to make them easy to click */
+a.page-numbers,
+span.page-numbers {
+	padding: .3em .7em;
+	color: #333;
+	color: hsl(0, 0%, 20%);
+}
+
+/* Link hover state */
+a:hover.page-numbers {
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
+/* Current page bold and dark */
+.paging-navigation .current {
+	font-weight: bold;
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
+
+
+/* Wordpress image galleries. */
+
+.gallery-item {
+  padding: 0.1rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-caption {
+  display: block; 
+  border:0;
+  padding:0.5rem;
+  font-size: 80%;
+  font-weight: lighter;
+  }  
+
+
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+td {
+	padding:0.5rem;
+}
+
+/*--------------------------------------------------------------
+# Definition list
+--------------------------------------------------------------*/
+dt  {
+    clear:left;
+    float:left;
+    width:30%;
+    font-size: 90%;
+}
+
+dd {
+    clear:right;
+    display:block;
+    font-size: 85%;
+    padding-left: 30%;
+}
+
+abbr{
+    font-size: 85%;
+    text-transform: uppercase;
+    text-decoration: underline none;
+}

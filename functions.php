@@ -8,9 +8,8 @@
 /**
  * Enqueue styles
  */
-function my_theme_enqueue_styles() {
+function journalen_enqueue_styles() {
 
-	$parent_style = 'positor-style';
 	wp_dequeue_style( 'positor-bootstrap' );
 	wp_dequeue_style( 'positor-style' );
 
@@ -23,4 +22,4 @@ function my_theme_enqueue_styles() {
 	wp_get_theme()->get( 'Version' )
 );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'journalen_enqueue_styles' );
