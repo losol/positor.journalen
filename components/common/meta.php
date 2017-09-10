@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="meta py-2">
+<div class="meta py-3">
 <?php // Show author_alias if assigned
 if (get_post_meta(get_the_ID(), 'author_alias', true) != "") :
     echo '<span class="sr-only">Skribent </span><i class="fa fa-fw fa-pencil" aria-hidden="true"></i>&nbsp;' . get_post_meta(get_the_ID(), 'author_alias', true); 
