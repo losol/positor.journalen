@@ -17,11 +17,11 @@ endif;
 
 <?php // Show photographer_alias if assigned
 if (get_post_meta(get_the_ID(), 'photographer_alias', true) != "") :
-    echo '<span class="sr-only">Fotograf </span><i class="fa fa-fw fa-camera-retro" aria-hidden="true"></i>&nbsp;' . get_post_meta(get_the_ID(), 'photographer_alias', true); 
+    echo '&nbsp;<span class="sr-only">Fotograf </span><i class="fa fa-fw fa-camera-retro" aria-hidden="true"></i>&nbsp;' . get_post_meta(get_the_ID(), 'photographer_alias', true); 
 endif;
 ?>
 <?php // Show published date
-    echo '<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>&nbsp;Publisert ' . get_the_date('j.n.Y');
+    echo '&nbsp;<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>&nbsp;Publisert ' . get_the_date('j.n.Y');
     
     // If updated date is different, show this as well
     if ( get_the_date( 'j.n.Y' ) !== get_the_modified_date( 'j.n.Y' ) ) {
