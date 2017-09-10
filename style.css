@@ -10,6 +10,9 @@
  Text Domain:  journalen
 */
 
+.bg-dark {
+	background-color: #231F20!important;
+}
 .header-large {
 	background-color: #231F20!important;
     border-style: solid;
