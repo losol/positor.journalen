@@ -17,6 +17,7 @@ function journalen_enqueue_styles() {
 
 	wp_enqueue_style( 'journalen-bootstrap',
 		get_stylesheet_directory_uri() . '/assets/stylesheets/journalen.min.css',
+		array( 'positor-bootstrap', 'positor-style' ),
 		wp_get_theme()->get( 'Version' )
 	);
 	wp_enqueue_style( 'journalen-style',
