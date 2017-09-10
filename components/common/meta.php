@@ -7,10 +7,7 @@
 
 ?>
 
-<?php
-$this_hide_sidebar = (bool) get_post_meta( $post->ID, '_positor_hide_sidebar', true );
-if ( ! $this_hide_sidebar ) {
-?>
+<div class="meta py-2">
 <?php // Show author_alias if assigned
 if (get_post_meta(get_the_ID(), 'author_alias', true) != "") :
     echo '<span class="sr-only">Skribent </span><i class="fa fa-fw fa-pencil" aria-hidden="true"></i>&nbsp;' . get_post_meta(get_the_ID(), 'author_alias', true); 
@@ -34,4 +31,6 @@ endif;
     ?>
 
 <?php
-} // End if().
+} // End if(). ?>
+</div>
+
