@@ -40,13 +40,6 @@ while ( have_posts() ) : the_post(); ?>
 			// Social sharing.
 			get_template_part( 'components/common/social-sharing', get_post_format() );
 
-			// Related posts.
-			get_template_part( 'components/common/related-posts', get_post_format() );
-
-			// Post navigation for prev/next posts.
-			get_template_part( 'components/common/post-navigation', get_post_format() );
-
-
 		}
 ?>
 
