@@ -56,7 +56,7 @@ $enable-print-styles:       true;
 $font-family-sans-serif: "Open Sans", Roboto, "Luto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $font-family-serif: "Lora", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base: $font-family-serif;
+$font-family-base: $font-family-sans-serif;
 
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
