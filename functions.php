@@ -11,10 +11,11 @@
 function my_theme_enqueue_styles() {
 
 	$parent_style = 'positor-style';
-	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style',
-		get_stylesheet_directory_uri() . '/style.css',
-		array( 'positor-bootstrap', 'positor-style' ),
+	wp_dequeue_style( 'positor-bootstrap' );
+	wp_dequeue_style( 'positor-style' );
+
+	wp_enqueue_style( 'journalen-style',
+		get_stylesheet_directory_uri() . '/assets/stylesheets/journalen.min.css',
 		wp_get_theme()->get( 'Version' )
 	);
 }

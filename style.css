@@ -3,35 +3,9 @@
  Description:  Tema for Fagbladet Journalen
  Author:       Ellen Renberg og Ole Kristian Losvik
  Template:     positor
- Version:      1.0.0
+ Version:      1.1.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  journalen
 */
-
-.bg-dark {
-	background-color: #231F20!important;
-}
-.header-large {
-	background-color: #231F20!important;
-    border-style: solid;
-    border-top: solid 8px #ED2224;
-	margin-top: 1rem;
-}
-
-
-.header-compact {
-	background-color: #231F20!important;
-    border-style: solid;
-    border-top: solid 2px #ED2224;
-}
-
-.large-logo {
-	width:70%;
-}
-
-
-.bg-featured-grid {
-	background: white !important;
-}
