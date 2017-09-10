@@ -9,3 +9,29 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  journalen
 */
+
+.bg-dark {
+	background-color: #231F20!important;
+}
+.header-large {
+	background-color: #231F20!important;
+    border-style: solid;
+    border-top: solid 8px #ED2224;
+	margin-top: 1rem;
+}
+
+
+.header-compact {
+	background-color: #231F20!important;
+    border-style: solid;
+    border-top: solid 2px #ED2224;
+}
+
+.large-logo {
+	width:70%;
+}
+
+
+.bg-featured-grid {
+	background: white !important;
+}
