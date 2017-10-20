@@ -14,7 +14,6 @@ if ( ! $this_hide_intro ) {
 
 <header>
 	<div class="bg-gray-light">
-  <h4>test</h4>
 	<?php
 	$this_featured_hero = get_post_meta( $post->ID, '_positor_featured_hero', true );
 	if ( $this_featured_hero ) {
@@ -57,7 +56,9 @@ if ( ! $this_hide_intro ) {
 		</div>
 		<div class="container py-3">
 
-		<?php // Show the title.
+		<?php // Show the categories
+			positor_the_categories();
+			// Show the title.
 			the_title( '<h1>', '</h1>' );
 		?>
 
