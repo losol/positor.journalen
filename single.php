@@ -14,7 +14,6 @@
 while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
-<?php get_template_part( 'components/common/category-badge' );?>
 <?php get_template_part( 'components/post/content-single-header', get_post_format() ); ?>
 
 <div class="container">
