@@ -19,7 +19,7 @@
 		<div class="card-text lead">
 			<a class="link-no-decoration" href="<?php the_permalink(); ?>">
 			<?php // Show the categories
-			positor_the_categories();
+			positor_the_categories_inline();
 			?>
 			<?php positor_the_post_intro(); ?>
 			</a>
