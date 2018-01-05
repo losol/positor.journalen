@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Will generate a card layout of the current post.
@@ -19,6 +18,9 @@
 		<h3 class="card-title display-3"><a class="link-no-decoration" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		<div class="card-text lead">
 			<a class="link-no-decoration" href="<?php the_permalink(); ?>">
+			<?php // Show the categories
+			positor_the_categories();
+			?>
 			<?php positor_the_post_intro(); ?>
 			</a>
 		</div>
